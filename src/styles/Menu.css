@@ -1,0 +1,78 @@
+/* carousel css*/
+.App {
+  margin: auto;
+}
+/*end*/
+
+.menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFB001;
+  }
+  .menu .menuTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: #011355;
+  }
+  
+  .menuList {
+    width: 70vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+  
+  /* MENU ITEM STYLING */
+  
+  .menuItem {
+    border-radius: 8px;
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    margin: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #011355;
+    color: #fff1d0;
+    font-size: 20px;
+  }
+
+  .menuItem:hover {
+    box-shadow: rgba(43, 43, 48, 0.2) 0px 7px 29px 0px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    margin-top: -5px;
+  }
+  
+  .menuItem div {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .menuItem h1
+   {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  
+  @media only screen and (max-width: 1300px) {
+    .menuList {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .menuList {
+      grid-template-columns: 1fr;
+    }
+  }
+  
